@@ -11,8 +11,10 @@ const counterSlice = createSlice({
     decrement: state => {
       state.value -= 1;
     },
-    incrementByAmount: (state, action) => {
+    incrementByAmount: (state, action) => {                                                  //dispatch(incrementByAmount(5));      we can use in component like this 
+
       state.value += action.payload;
+//state.value = state.value + action.payload;                                           
 //state.value = 0 + 5 = 5
     }
   }
