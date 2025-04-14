@@ -13,6 +13,7 @@ const counterSlice = createSlice({
     },
     incrementByAmount: (state, action) => {
       state.value += action.payload;
+//state.value = 0 + 5 = 5
     }
   }
 });
